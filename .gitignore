@@ -12,3 +12,4 @@
 *.out
 *.slo
 *.so
+build/
