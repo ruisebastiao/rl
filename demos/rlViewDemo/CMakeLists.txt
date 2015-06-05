@@ -1,7 +1,16 @@
 project(rlViewDemo)
 
-find_package(Qt4 COMPONENTS QtCore QtGui QtOpenGL)
-include(${QT_USE_FILE})
+#find_package(Qt4 COMPONENTS QtCore QtGui QtOpenGL)
+#include(${QT_USE_FILE})
+
+# Qt library
+find_package(Qt5Widgets)
+find_package(Qt5OpenGL)
+set(CMAKE_AUTOMOC ON)
+
+# OpenGL & GLEW library
+find_package(OpenGL)
+
 
 find_package(SoQt)
 
